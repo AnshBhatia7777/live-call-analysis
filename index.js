@@ -16,6 +16,8 @@ const sentimentBucket = 'sentiments_test';
 const { DynamoDB } = require("@aws-sdk/client-dynamodb");
 var callId="";
 var dt=Date.now();
+//added date and caller id as the unique parameter
+
 const bodyParser = require("body-parser");
 
 AWS.config.update({ region: 'us-east-1' });
